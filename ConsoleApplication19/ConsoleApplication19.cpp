@@ -1,7 +1,15 @@
 ﻿#include <iostream>
 #include <windows.h>
 #include <conio.h>
+
+void print_array(int m[], int size);
+void fill(int m[], int size);
+void print_array2(int m[], int size);
+void print_array3(int m[], int size);
+int main();
+
 using namespace std;
+
 void print_array(int m[], int size)
 {
 	srand(time(0));
@@ -44,11 +52,9 @@ int main()
 {
 	int ar[5] = {};
 	
-	// пример передачи массива в качестве параметра
 	print_array(ar, 5); // первый параметр - имя массива (без квадратных скобок)
 	// второй параметр - какое количество элементов необходимо обработать
 	fill(ar, 5);
 	print_array2(ar, 5);
 	print_array3(ar, 5);
-
 }
