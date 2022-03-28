@@ -8,6 +8,12 @@ void print_array(int m[], int size)
 	for (int i = 0; i < size; i++)
 	{
 		m[i] = rand();
+	}
+}
+void print_fill(int m[], int size)
+{
+	for (int i = 0; i < size; i++)
+	{
 		cout << m[i] << ", ";
 	}
 	cout << "\n";
@@ -41,7 +47,8 @@ int main()
 	// пример передачи массива в качестве параметра
 	print_array(ar, 5); // первый параметр - имя массива (без квадратных скобок)
 	// второй параметр - какое количество элементов необходимо обработать
+	print_fill(ar, 5);
 	print_array2(ar, 5);
 	print_array3(ar, 5);
-	cout << ar[0];
+
 }
