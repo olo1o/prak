@@ -2,13 +2,14 @@
 #include <windows.h>
 #include <conio.h>
 
+using namespace std;
+
 void print_array(int m[], int size);
 void fill(int m[], int size);
 void print_array2(int m[], int size);
 void print_array3(int m[], int size);
 int main();
 
-using namespace std;
 
 void print_array(int m[], int size)
 {
